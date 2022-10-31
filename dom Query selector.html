@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var element;
+
+// target only first css 
+element = document.querySelector("#header").innerHTML = "<h1>WOW</h1>";
+
+element = document.querySelector("#header").getAttribute ("class");
+
+// target all css 
+element = document.querySelectorAll(".list");
+
+element = document.querySelectorAll(".list")[1].innerHTML;
+
+element = document.querySelectorAll("ul");
+
+element = document.querySelectorAll("ul")[1].innerHTML;
+
+element = document.querySelectorAll("#header h1");
+
+element = document.querySelectorAll("#header h1")[1].innerHTML;
+
+console.log(element);
+    </script>
+</body>
+</html>

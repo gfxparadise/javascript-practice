@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.getElementById("header").addEventListener("click", abc);
+
+function abc() {
+    document.getElementById("header").classList.add("xyz","efg");
+    
+    document.getElementById("header").classList.remove("xyz");
+    
+    var a = document.getElementById("header").classList.length;
+
+    document.getElementById("header").classList.toggle("xyz");
+
+    var a = document.getElementById("header").classList;
+
+    var a = document.getElementById("header").classList.item(0);
+
+    var a = document.getElementById("header").classList.contains("first");
+    
+    console.log(a);
+}
+    </script>
+</body>
+</html>

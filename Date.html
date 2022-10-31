@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+    // get time date location and other from pc 
+    var now = new Date();
+    document.write(now);
+
+    // only date with day year month week name from pc 
+    var now = new Date();
+    document.write(now.toDateString);
+
+    // only date from pc 
+    var now = new Date();
+    document.write(now.getDate);
+
+    // only year from pc 
+    var now = new Date();
+    document.write(now.getFullYear);
+
+      // only weak day by index 0 =sunday from pc 
+      var now = new Date();
+    document.write(now.getDay);
+
+      // only hour from pc 
+      var now = new Date();
+    document.write(now.getHours);
+
+      // only minutes from pc 
+      var now = new Date();
+    document.write(now.getMinutes);
+    
+  // only show millisecond from pc 
+  var now = new Date();
+    document.write(now.getMilliseconds);
+
+      // only second from pc 
+      var now = new Date();
+    document.write(now.getSeconds);
+
+// change date 
+var now = new Date();
+now.setDate(11)
+    document.write(now);
+
+    // change year
+var now = new Date();
+now.setFullYear(2001)
+    document.write(now);
+
+    // change month 
+var now = new Date();
+now.setMonth(1)
+    document.write(now);
+
+// change hour
+var now = new Date();
+now.setHours(11)
+    document.write(now);
+
+    // change date 
+var now = new Date();
+now.setDate(15)
+    document.write(now);
+
+    </script>
+</body>
+</html>

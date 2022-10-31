@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>// Event
+        function sayHello() {
+                       alert("Hello World")
+        }
+        </script>
+    <!-- onclick  -->
+<form>
+    <input type = "button" onclick = "sayHello()" value = "Say Hello" />
+ </form> 
+<!-- on double click  -->
+ <form>
+    <input type = "button" ondblclick = "sayHello()" value = "Say Hello" />
+ </form> 
+<!-- right click  -->
+ <form>
+    <input type = "button" oncontextmenu = "sayHello()" value = "Say Hello" />
+ </form> 
+<!-- call event when mouse come -->
+ <form>
+    <input type = "button" onmouseenter = "sayHello()" value = "Say Hello" />
+ </form> 
+<!-- when mouse go out from button call event  -->
+ <form>
+    <input type = "button" onmouseout = "sayHello()" value = "Say Hello" />
+ </form> 
+<!-- same as on click  -->
+ <form>
+    <input type = "button" onmousedown = "sayHello()" value = "Say Hello" />
+ </form> 
+<!-- when you release the click call the event  -->
+ <form>
+    <input type = "button" onmouseup = "sayHello()" value = "Say Hello" />
+ </form> 
+
+</body>
+<!-- event that work only in body -->
+<!-- call event when you type  -->
+<body onkeypress="hello()"> 
+    when you resize page call event
+    <body onresize="">
+        <!-- when you scroll call event  -->
+        <body onscroll="">
+            
+        </body>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+// conditonal Terrary Operator (similar to if & else but we are unable to add too many condition in one like if & else)
+        //  comparision Operator 
+        var a = 100;
+        var b;
+        // (condition)? True Statement : False Statement
+        (a == 100) ? b = "True" : b = "False";
+        document.write("<br>")
+// switch condition (in this when one condition work than other condition dont work)
+        // default condition work like a else 
+        // break use to stop 
+        var day = 1
+        switch (day) {
+            case 1:
+                document.write("Mon");
+                break;
+            case 2:
+                document.write("Tue");
+                break;
+
+            case 3:
+                document.write("Wed");
+                break;
+
+            case 4:
+                document.write("Thur");
+                break;
+
+            case 5:
+                document.write("Fri");
+                break;
+
+            default:
+                document.write("Enter Working only day");
+                break;
+        }
+        document.write("<br>")
+        // Also use as 
+        var day = 6
+        switch (day) {
+            case 6: case 7:
+                document.write("Not a working day");
+                break;
+        }
+        document.write("<br>")
+        // Also use for comparision 
+        var age = 20
+        switch (true) {
+            case (age >= 15 && age <= 20):
+                document.write("Eligible");
+                break;
+            case (age >= 21 && age <= 40):
+                document.write("Not Eligible");
+                break;
+
+            default:
+                document.write("enter valid number")
+        }
+        document.write("<br>")
+// Alert Box
+        // we can also do calculation on alert 
+
+        var as = 40;
+        var bs = 20;
+        if (a > b) {
+            alert("A is greater")
+
+        } else {
+            alert("B is  greater")
+
+        }
+        document.write("<br>")
+// confirm Box (show yes no)
+        // we mostly add it on event 
+        // onrefresh 
+
+        var aq = confirm("Do you like website")
+        if (aq) {
+            alert ("Thanks")
+        } else {
+            alert ("SORRY")
+        }  
+        document.write("<br>")
+// prompt Box (Question alert) 
+        var a = prompt ("what is your name?");
+        alert ("Welcome "+ a)
+
+// Function
+        function hello() {
+            document.write("I am zombie")
+            
+        }
+        hello()
+
+// Function parameter (when we change var(parameter) every time we use it)
+// Abdul Qadir is defult we don't write name than Abdulqadir shown 
+// function hello(Fname = "Abdul", Lname = "Qadir"){
+    function hello(Fname, Lname){
+document.write("hi " + Fname + " " + Lname)
+        }
+        hello("ali", "khan");
+
+// Function return
+
+    function sum(math, eng, sn){
+        var a = math + eng + sn;
+        return a;
+
+    }
+    function percentage(tt){
+       var per = tt/300 * 100;
+       document.write(per);
+}
+
+    var total = sum(89, 79, 99);
+    percentage(total);
+
+// Global var work both inside of function and outsite
+    var a = "1";
+    var b = "10";
+        function name() {
+            document.write("a+b")
+        }
+
+// local var dont work outside of function 
+
+        function name() {
+            var a = "1";
+            var b = "10";
+        document.write("a+b")
+        }
+
+
+
+</script>
+
+  
+    </body>
+</body>
+
+</html>

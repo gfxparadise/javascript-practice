@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // use for calculation or only work with number 
+        var a = 49
+        var num = Number(a);
+        document.write(num + 10);
+
+         // show only first number
+         var a = "49, 678, 55"
+        var num = parseInt(a);
+        document.write(num);
+
+         // dont show point value
+         var a = "49.678"
+        var num = parseFloat(a);
+        document.write(num);
+
+         // show true when number avaliable 
+         var a = "4"
+        var num = Number.isFinite(a);
+        document.write(num);
+
+         // show false when point avaliable or infinity avaliable
+         var a = "6.5"
+        var num = Number.isInteger(a);
+        document.write(num);
+
+         // use to fix value before point and change last number of poit
+         var a = "4.5555555"
+        var num = a.toFixed(4);
+        document.write(num);
+
+        // use to fix value before point and change last number of poit
+        var a = "4.5555555"
+        var num = a.toPrecision(2);
+        document.write(num);
+
+        
+
+    </script>
+</body>
+</html>

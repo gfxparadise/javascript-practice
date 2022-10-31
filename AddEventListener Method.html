@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // onclick event
+//document.getElementById("header").onclick = abc;
+
+// onmouseenter event
+//document.getElementById("header").onmouseenter = abc;
+
+// with addEventListener
+
+ document.getElementById("header").addEventListener("mouseenter",abc);
+   document.getElementById("header").addEventListener("click", function(){
+       document.getElementById("header").style.border = "10px solid red"; 
+   }); 
+
+ document.getElementById("header").addEventListener("click", abc);
+   document.getElementById("header").addEventListener("click", function() {
+      this.style.border = "10px solid red";
+   });  
+
+// with removeEventListener
+
+//document.getElementById("header").removeEventListener('mouseleave',abc);
+
+//document.getElementById("header").addEventListener("click",xyz);
+
+function abc(){
+    document.getElementById("header").style.background = "green";
+}
+
+function xyz() {
+    document.getElementById("header").removeEventListener('mouseleave',abc);
+}
+
+/* ====================================================== */
+    </script>
+</body>
+</html>

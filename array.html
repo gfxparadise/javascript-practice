@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+    // Array way 1
+    // 0=10, 1=20, 2=30, 3=40
+    var ary =[10,20,30,40];
+        document.write(ary[0])
+    // Array way 2
+    var arry = new Array(10,20,30,40);
+        document.write(arry[0])
+        // OR 
+    var aary = new Array();
+    aary[0] = 30
+    aary[1] = 60
+    document.write(aary[0])
+
+    // array with loop and prompt 
+    var arya = new Array();
+        for(var g = 0; g < 3; g++){
+            arya[g] = prompt("Enter Your Value")
+        };
+        
+    // multidimention arry 
+        var aryy =    [
+            ["TGP", 18, "male", "BBA"],
+            ["AQ", 10, "male", "BA"],
+            ["GP", 25, "male", "BS"],
+            ["GFX", 22, "male", "BCOM"]
+            ];
+        // to make table
+            document.write("<table border = '1px' cellspacing ='0'>");
+        // loop    
+    for(var a = 0; a<4; a++){
+        document.write("<tr>");
+    for(var b = 0; b<4; b++){
+        document.write("<td>" + aryy[a][b] +"</td>");
+    }
+    document.write("</tr>");
+    }
+    document.write("</table>")
+
+    // array by length (automatic count row and colums)
+    var tg =    [
+            ["TGP", 18, "male", "BBA"],
+            ["AQ", 10, "male", "BA"],
+            ["GP", 25, "male", "BS"],
+            ["GFX", 22, "male", "BCOM"],
+                    ];
+        // to make table
+            document.write("<table border= '1px' cellspacing='0'");
+        // loop    
+    for(var a = 0; a< tg.length; a++){
+        document.write("<tr>");
+    for(var b = 0; b< tg[a].length; b++){
+        document.write("<td>" + tg[a][b] +"</td>");
+    }
+    document.write("</tr>");
+    }
+    document.write("</table>")
+
+    // Modify Array 
+    var l = ["TGP", 18, "male", "BBA"];
+            document.write(l + "<br>")
+        l[0] = "GFX"
+            document.write(l + "<br>")
+
+        // to remove array 
+                 delete l[1];
+                    document.write(l + "<br>")
+    
+        // sort array method (by alphabatic order)
+            var e = ["gss", "zffg", "afdf", "kkas"]
+                document.write(e + "<br>" + "<br>");
+            e.sort();
+                document.write(e + "<br>" + "<br>");
+
+        // reverse array method (start from last to begin) 
+            e.reverse();
+                document.write(e + "<br>" + "<br>");
+
+        // pop array method (delete last value)
+            e.pop();
+                document.write(e + "<br>" + "<br>");
+
+        // push array method (use to add new value in last)
+            e.push("lkad");
+                document.write(e + "<br>" + "<br>");
+
+        // shift method (delete first value)
+            e.shift();
+                document.write(e + "<br>" + "<br>");
+
+        // unshit array method (to add first value)
+            e.unshift("zksj");
+                document.write(e + "<br>" + "<br>");
+
+        // concat array method( use to merge to array)
+            var o = e.concat("gghhjk", "trgyt");
+                document.write(o + "<br>" + "<br>");
+                        // OR 
+            var k = ("gygy", "llhgy");
+            var m = e.concat(k);
+             document.write(m + "<br>" + "<br>");
+        
+        // join array method (use to join array value)
+            var f = m.join(" / ");
+                document.write(f + "<br>" + "<br>");
+
+        // slice array mthod ( use to break array)
+            var s = f.slice(2, 4);
+                document.write(s + "<br>" + "<br>");
+
+        // slice array mmethod (use to add vale in between or center In this 1 numer show where to add and seond show what to delete 0 = no delete)
+            var r = e.splice(2,0,"kasf", "awjoi");
+                document.write(r + "<br>" + "<br>");
+
+        // isArray array method (use to know that is it array or not)
+            var av = 20
+                var vc = Array.isArray(av);
+                    document.write(vc + "<br>" + "<br>");
+
+
+        // indexof array method use to search array value by place in row
+            var st = r.indexOf("kasf");
+                document.write(st + "<br>" + "<br>");
+
+        // lastindexOf array method use to search array value by place in row starts from ending 
+            var sh = r.lastIndexOf("kasf");
+                document.write(sh + "<br>" + "<br>");
+
+        // includes array method use to search array value by tr false
+        var sp = r.includes("kasf");
+                document.write(sp + "<br>" + "<br>");
+
+        // some use to finf that there is any adult age avaliable or not  it will stop when got dont check ever show true or false
+var age = [10, 30, 12, 76];
+var bf = age.some(check);
+document.write(bf + "<br><br>");
+function check(age){
+    return age >= 18;
+}
+
+
+        // every similar to some but it chech all value
+        var bf = age.very(check);
+document.write(bf + "<br><br>");
+function check(age){
+    return age >= 18;
+}
+
+// Find Array method Work Only one time help us to adult age find
+var ages= [10, 23, 19, 20] ;
+document. write (ages + "<br><br> ");
+var b = ages.find (checkAdult);
+document.write (b + "<br><br>") ;
+function checkAdult (age) {
+return age >= 18;}
+
+// FindIndex Array method Work Only one time help us to adult age find index only
+var ages= [10, 23, 19, 20] ;
+document. write (ages + "<br><br> ");
+var b = ages.findIndex (checkAdult);
+document.write (b + "<br><br>") ;
+function checkAdult (age) {
+return age >= 18;}
+
+// Filter array method use to create filter using function like Age above 18 show all value above 18
+var ages = [50,12, 19, 20] ;
+document.write(ages + "<br><br>");
+var b = ages.filter (checkAdult)
+document.write(b + "<br><br>");
+function checkAdult (age) {
+return age = 18;}
+
+// tostring array method use to convert array in to string 
+var a = ["Ra2344", "K34n", "A554", "N234"];
+a. tostring () ;
+document. write (a);
+
+// ValueOf is a default method of array  no need to use
+var a = ["Ru34l", "Kar4554", "Am5", "N56"];
+document.write (a.valueOf());
+
+// Fill Array method  is use to convert all value in to same word 
+var a = ["R3", "Kn5", "A9", "N54"];
+a.fill (ATI) ;
+document. write (a);
+
+// map array method is use to get new array by multipication
+var ary = [11,4,9,16];
+var b = ary.map(test);
+document.write (b)
+function test(x){
+return x * 10;}
+
+// object in Array and join first and last name
+var ary = [{
+Iname : "Blue",  Iname: "KGF",
+fname :"Yay",  Iname: "KPk",
+fname: "ben", Iname:"KLask",
+fname :"Kn", Iname:  "Jaf"}];
+var b = ary.map (test) ;
+document.write (b)
+function test(x){
+return x.fname +" "+ X.lname}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // Object similar to array but it is advance 
+        var a = {
+        fname :'Abdul',
+        Iname : 'Q',
+        age: 21, 
+        email : 'hello@GFX.net',
+        
+        // Object in object 
+        living : { 'city' : 'karachi',
+        'country' : 'pakistan' },
+       
+
+        // Array in object 
+        mail : [ 'yahoo', 'gmail', 'yandex'],
+
+        // Function in object
+        salary : function (){
+        return 25000;},
+
+        // Making 2 object combination using Function 
+        fullname : function(){
+        return this.fname +" "+ this.lname;
+        console. log (a) ;
+        document. write (a. fullname () );
+        document. write (a. living.city);
+        }}
+
+        </script>
+</body>
+</html>

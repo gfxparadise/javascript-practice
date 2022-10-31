@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var element;
+
+// use to extract text without html 
+element = document.getElementById("header").innerText;
+
+element = document.getElementById("content").innerText;
+
+// use to extract html
+element = document.getElementById("content").innerHTML;
+
+element = document.getElementById("header").innerHTML;
+
+// use to get attributes value 
+element = document.getElementById("header").getAttribute("class");
+
+element = document.getElementById("header").getAttribute("style");
+
+element = document.getElementById("header").getAttribute("onClick");
+
+// use to get attributes with name and value 
+element = document.getElementById("header").getAttributeNode("onClick");
+
+element = document.getElementById("header").getAttributeNode("style");
+
+// use to get attributes value only
+element = document.getElementById("header").getAttributeNode("style").value;
+
+// to get allatributes 
+element = document.getElementById("header").attributes;
+
+// use to get specific attributes by number 
+element = document.getElementById("header").attributes[1];
+
+// use to get specific attributes by number only name
+element = document.getElementById("header").attributes[2].name;
+
+// use to get specific attributes by number only value
+element = document.getElementById("header").attributes[2].value;
+
+//  DOM Set Method
+
+// to change value of h1 
+document.getElementById("header").innerHTML = "<h1>WOW</h1>";
+
+// to change the attributes value
+element = document.getElementById("header").setAttribute("style","border:10px dotted yellow");
+
+element = document.getElementById("header").attributes[1].value = "xyz";
+
+// to remove attributes 
+element = document.getElementById("header").removeAttribute("style");
+
+element = document.getElementById("header").removeAttribute("class");
+
+console.log(element);
+
+    </script>
+</body>
+</html>
