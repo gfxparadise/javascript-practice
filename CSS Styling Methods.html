@@ -10,6 +10,7 @@
     <script>
         var element;
 
+        // to change css by style
 element = document.querySelector("#header").style.border;
 
 element = document.querySelector("#header").style.color;
@@ -18,18 +19,22 @@ document.querySelector("#header").style.backgroundColor = "tan";
 
 document.querySelector("#header").style.color = "blue";
 
+// to change css class by name
 document.querySelector("#header").className = "abc xyz";
 
 element = document.querySelector("#header").className;
 
+// it is use to class by index 
 document.querySelector("#header").classList = "abc xyz";
 
 element = document.querySelector("#header").classList;
 
+// to add
 document.querySelector("#header").classList.add("xyz","efg");
 
 element = document.querySelector("#header").classList;
 
+// to remove 
 document.querySelector("#header").classList.remove("xyz");
 
 element = document.querySelector("#header").classList;

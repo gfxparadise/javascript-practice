@@ -8,19 +8,28 @@
 </head>
 <body>
     <script>
-        // onclick event
-//document.getElementById("header").onclick = abc;
+
+
+    //   use to add onclick event in class 
+document.getElementById("header").onclick = abc;
 
 // onmouseenter event
-//document.getElementById("header").onmouseenter = abc;
+document.getElementById("header").onmouseenter = abc;
 
-// with addEventListener
+// use to make it function 
+function abc(){
+    document.getElementById("header").style.background = "green";
+}
+
+
+// with addEventListener to add multiple event
 
  document.getElementById("header").addEventListener("mouseenter",abc);
    document.getElementById("header").addEventListener("click", function(){
        document.getElementById("header").style.border = "10px solid red"; 
    }); 
 
+// with addEventListener to add multiple same event
  document.getElementById("header").addEventListener("click", abc);
    document.getElementById("header").addEventListener("click", function() {
       this.style.border = "10px solid red";
@@ -32,9 +41,7 @@
 
 //document.getElementById("header").addEventListener("click",xyz);
 
-function abc(){
-    document.getElementById("header").style.background = "green";
-}
+
 
 function xyz() {
     document.getElementById("header").removeEventListener('mouseleave',abc);

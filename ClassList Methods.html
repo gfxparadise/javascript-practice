@@ -11,18 +11,25 @@
         document.getElementById("header").addEventListener("click", abc);
 
 function abc() {
+
+    // to add 
     document.getElementById("header").classList.add("xyz","efg");
     
+    // to remove 
     document.getElementById("header").classList.remove("xyz");
     
+    // to get length how many clss avaliable 
     var a = document.getElementById("header").classList.length;
 
+    // to toggle (to add on click or remove on second click) 
     document.getElementById("header").classList.toggle("xyz");
 
     var a = document.getElementById("header").classList;
 
+    // to see what class avaliable by index 
     var a = document.getElementById("header").classList.item(0);
 
+    // did class avaliable 
     var a = document.getElementById("header").classList.contains("first");
     
     console.log(a);

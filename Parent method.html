@@ -8,18 +8,21 @@
 </head>
 <body>
     <script>
-        //var a = document.getElementById("inner").parentElement;
+// to target inners parent 
+        var a = document.getElementById("inner").parentElement;
 
-//var a = document.getElementById("outer").parentElement;
+        // to target outer parent 
+var a = document.getElementById("outer").parentElement;
 
-//var a = document.body.parentElement;
+var a = document.body.parentElement;
 
-//var a = document.getElementById("inner").parentElement.style.background = "red";
+// we can also do changes using css 
+var a = document.getElementById("inner").parentElement.style.background = "red";
 
-/* document.getElementById("child-c").parentElement.style.background = "red";
-    var a = document.getElementById("child-c").parentElement; */
+document.getElementById("child-c").parentElement.style.background = "red";
+    var a = document.getElementById("child-c").parentElement; 
 
-
+// always try to find parent and give any parent 
 document.getElementById("child-c").parentElement.style.background = "red";
 var a = document.getElementById("main").parentNode; 
 
