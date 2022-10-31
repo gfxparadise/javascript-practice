@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // append child is use to connect tag with connect 
+         
+//var newElement = document.createElement("p");
+
+var newElement = document.createElement("h2");
+
+console.log(newElement);
+
+var newText = document.createTextNode("This is just text");
+
+console.log(newText);
+
+/* JavaScript only AppendChild */
+
+// to connect new tag and text  
+newElement.appendChild(newText);
+
+// connect appendchild with id and it comes in last 
+document.getElementById("test").appendChild(newElement);
+    
+
+/* JavaScript  InsertBefore when we want a bigning or middle place*/
+
+var target = document.getElementById("test");
+target.insertBefore(newElement,target.childNodes[0])
+
+
+
+
+    </script>
+</body>
+</html>

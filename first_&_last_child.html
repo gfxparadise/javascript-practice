@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // To target first or last child tag only (we can style it)
+        var a = document.getElementById("inner").firstElementChild;
+
+var a = document.getElementById("inner").firstElementChild.innerHTML;
+
+ document.getElementById("inner").firstElementChild.style.background = "red";
+    var a = document.getElementById("inner").firstElementChild.innerHTML; 
+
+
+document.getElementById("outer").lastElementChild.style.background = "red";
+    var a = document.getElementById("outer").lastElementChild; 
+
+
+ document.getElementById("inner").lastElementChild.style.background = "red";
+    var a = document.getElementById("inner").lastElementChild;  
+
+//  uanable to style. it can be target any thing in last or first
+
+var a = document.getElementById("inner").firstChild; 
+
+var a = document.getElementById("inner").lastChild; 
+
+var a = document.getElementById("child-c").firstChild; 
+
+var a = document.getElementById("child-c").lastChild; 
+
+console.log(a);
+
+    </script>
+</body>
+</html>

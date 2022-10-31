@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        
+    // isert Adjacent Element use to create and append tag
+        var newElement = document.createElement("h2");
+
+        var newText = document.createTextNode("This is just element");
+
+        newElement.appendChild(newText);
+
+        var target = document.getElementById("test");
+
+        target.insertAdjacentElement("afterbegin", newElement);
+
+
+    // isert Adjacent text use to create and append text
+
+
+        var newText = "<h2>This is just Text</h2>";
+
+        var target = document.getElementById("test");
+
+        target.insertAdjacentHTML("beforeend", newText);
+
+    // isert Adjacent HTML use to create and append text and tag same time
+
+        var newElement = "<h2>This is just Html</h2>";
+
+        var target = document.getElementById("test");
+
+        target.insertAdjacentHTML("afterend", newElement);
+
+    </script>
+</body>
+
+</html>

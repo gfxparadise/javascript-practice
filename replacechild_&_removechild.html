@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<Script>
+
+    /*JavaScript ReplaceChild*/
+
+var newElement = document.createElement("li");
+
+var newText = document.createTextNode("WOW new Text");
+
+newElement.appendChild(newText);
+
+var target = document.getElementById("list");
+
+var oldElement = target.children[0];
+
+console.log(oldElement);
+
+target.replaceChild(newElement,oldElement);
+
+/*JavaScript RemoveChild*/
+
+var target = document.getElementById("list");
+
+var oldElement = target.children[1];
+
+</Script>
+</body>
+</html>
