@@ -4,16 +4,14 @@
     <title>JavaScript</title>
 </head>
 <body>
+    <!-- use to open and close new window on click -->
     <button onclick="openWindow()">Open Window</button>	
     <button onclick="closeWindow()">Close Window</button>
     <script>
         /* JavaScript Open Close Window Method */
         var myWindow;
         function openWindow(){
-            //window.open("http://www.yahoobaba.net","yahoobaba");
-           //window.open("http://www.yahoobaba.net","_blank");
-            //window.open("http://www.yahoobaba.net","_parent");
-            myWindow = window.open("http://www.yahoobaba.net","","width=500px,height=200px,left=100px,top=200px");
+            myWindow = window.open("file:///C:/xampp/htdocs/personal%20portfolio/Abdul-Qadir/index.","","width=500px,height=200px,left=100px,top=200px");
         }
 
         function closeWindow(){
