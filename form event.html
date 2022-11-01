@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Form Events</title>
+</head>
+
+<body>
+	<form action="" onsubmit="submitFunction()">
+		<label for="">Name</label><input type="text" id="fname" onchange="onchangeFunction(this)"
+			onselect="selectFunction()" oninvalid="alert('Please fill the First Name.')" required><br><br>
+
+		<label for="">Class</label><input type="text" id=""><br><br>
+
+		<select id="" onchange="onchangeFunction(this)">
+			<option value="India">India</option>
+			<option value="Pakistan">Pakistan</option>
+			<option value="Bangladesh">Bangladesh</option>
+			<option value="Sri Lanka">Sri Lanka</option>
+			<option value="Nepal">Nepal</option>
+		</select>
+		<input type="submit">
+	</form>
+
+	<div id="test" style="border:1px solid red;margin-top:20px;"></div>
+	<script>
+
+		/*  JavaScript Focus Event  */
+		// it use to higlight when mouse avaliable or when we are writing
+
+		function focusFunction(element) {
+			element.style.background = "lime";
+		}
+
+		/*  JavaScript Blur Event  */
+		// it use to undo higlight when mouse no avaliable or when we are not writing
+
+		function blurFunction(element) {
+			element.style.background = "";
+		}
+
+		/*  JavaScript Input Event  */
+		// show input in other place 
+		function inputFunction(element) {
+			var x = element.value;
+			document.getElementById("test").innerHTML = x;
+		}
+
+		/*  JavaScript Change Event  */
+		// similar to input but it show  when we go to other option
+		function onchangeFunction(element) {
+			var x = element.value;
+			document.getElementById("test").innerHTML = x;
+		}
+
+		/*  JavaScript Select Event  */
+		// when we select 
+		function selectFunction() {
+			console.log("You selected some text.");
+		}
+
+		/* JavaScript Submit Event */
+		// when we submit 
+		// function submitFunction(){
+		// 	alert("You submitted a form.");
+		// }
+
+		function submitFunction() {
+			var x = document.getElementById("fname").value;
+			alert("Hello " + x);
+		}
+	</script>
+</body>
+
+</html>
