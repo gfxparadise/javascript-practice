@@ -9,8 +9,8 @@
 </head>
 <body>
 <!-- 
-Container
-    Defult-Container
+Container Class:
+    Defult-Container (Auto Responsive)
         Our default .container class is a responsive, fixed-width container, meaning its max-width changes at each breakpoint.
             <div class="container">Defult container</div>
 
@@ -46,6 +46,126 @@ Container
                 <div class="container-xl">100% wide until extra large breakpoint(get space after extra large break)</div> 
 
 -----------------------------------------------------------------------------------------------------------------------------------
+
+Row Class:
+    Always comes in container wthout container it dont work
+
+                <div class="container">
+                    <div class="row"> Row 1 </div>
+                    <div class="row"> Row 2 </div>
+                    <div class="row"> Row 2 </div>
+                </div>
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Column Class:
+    Always comes in row wthout row it dont work properly
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col"> Column 1 </div>
+                            <div class="col"> Column 2 </div>
+                            <div class="col"> Column 3 </div>
+                            <div class="col"> Column 4 </div>
+                        
+                 W-100 use to break manualy (by using this column came on 2nd line) 
+                                <div class="w-100"></div>
+
+                            <div class="col"> Column 5 </div>
+                            <div class="col"> Column 6 </div>
+                            <div class="col"> Column 7 </div>
+                            <div class="col"> Column 8 </div>
+                        </div>
+                    </div> 
+                ------------------------------------------------------------------------------------------
+                    
+                Automatic break on Row row-cols-3
+                    <div class="container">
+                        <div class="row row-cols-3">
+                            <div class="col"> Column 1 </div>
+                            <div class="col"> Column 2 </div>
+                            <div class="col"> Column 3 </div>
+                            <div class="col"> Column 4 </div>
+                            <div class="col"> Column 5 </div>
+                            <div class="col"> Column 6 </div>
+                        </div>
+                    </div> 
+                ------------------------------------------------------------------------------------------
+ 
+                Automatic break on Column using responsive
+                    <div class="container">
+                        <div class="row">
+                            <div class="col"> Column </div>
+
+                    when reach very small column size become 100% width (540px)
+                            <div class="col-sm"> Column </div>
+
+                    when reach small column size become 100% width (720px)
+                            <div class="col-md"> Column </div>
+
+                    when reach medium column size become 100% width (960px)
+                            <div class="col-lg"> Column </div>
+
+                    when reach large column size become 100% width (1140px)
+                            <div class="col-xl"> Column </div>
+
+                    when reach Extra large column size become 100% width (1320px)
+                            <div class="col-xxl"> Column </div>
+                        </div>
+                    </div> 
+                ------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------------------------------- 
+
+Colums Grid system:
+            Alway avaliaable 12 column in grid For example 
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12"> .col-12 = .col</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">col-12</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-9">col-9</div>
+                            <div class="col-3">col-3</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">col-12</div>
+                        </div>
+                    </div>
+                ------------------------------------------------------------------------------------------
+
+                Alway avaliaable 12 column in grid responsive For example 
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">It comes on right till small size come</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">it comes on center till small size come</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">it comes on left till small size come</div>
+                        </div>
+                    </div>
+                ------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------- 
+offset class:
+    It is use to start by leaving specific column space
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">.col-md-4</div>
+                <div class="col-md-4 offset-md-4">.col-md-4 .offset-md-4</div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+                <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 offset-md-3">.col-md-6 .offset-md-3</div>
+            </div>
+        </div>  
+
 Alert:
         Normal Alert with different Color using bootstap:
 
@@ -123,27 +243,7 @@ Alert:
         </div>
 ----------------------------------------------------------------------------------------------------------------------------------- 
 
- Basic structure to create Grid options
-
-    <div class="row">
-        <div class="col-sm">
-            One of three columns
-        </div>
-        <div class="col-sm">
-            One of three columns
-        </div>
-        <div class="col-sm">
-            One of three columns
-        </div>
-    </div>
--->
- 
-
-
-
-
-
-<!-- javascript link  
+ javascript link  
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
