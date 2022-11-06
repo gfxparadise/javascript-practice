@@ -567,12 +567,32 @@ $(document).ready(function () {
         // }, "fast")
     // ---------------------------------------------------------------------------------
 
+    // Automatic with callback function
+    	// $('#slideUpBtn').click(function(){
+            // $('#box').slideUp(3000,function(){
+                // console.log("Now it is Hidden")
+            // });
+        // });
+    // ---------------------------------------------------------------------------------
+
     // manual (que method)
         // $('#wiki').animate({ opacity: 0.3 }, 4000);
         // $('#wiki').animate({ opacity: 0.9 }, 1000);
         // $('#wiki').animate({ width: '350px' }, 12000);
     // ---------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------------
 
+// Stop Method
+    // $('#stopBtn').click(function(){
+        // To stop single animation     
+            // $('#box').stop();
+
+        // to stop all animation 
+            // $('#box').stop(true);
+            
+        // To skip animation 
+            // $('#box').stop(true,true);
+    // });
 // ---------------------------------------------------------------------------------------------------------------
 
 // some other stuff
