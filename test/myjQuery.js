@@ -226,6 +226,11 @@ $(document).ready(function () {
             // $('#box').css({"background":"pink","color":"red","border":"5px dotted green"});
         // });
 // ---------------------------------------------------------------------------------------------------------------
+// Method Chaining:
+    // To add multiple event in single line 
+        $('#animateBtn').click(function(){
+            $('#box').css('background','pink').slideUp(2000).slideDown(2000);
+        });
 
 // On method
     //  when we want to add multiple event  
@@ -582,6 +587,86 @@ $(document).ready(function () {
     // ---------------------------------------------------------------------------------
 // ---------------------------------------------------------------------------------------------------------------
 
+// Ancestors Methods:
+        // To target DOMException( in this we can target parent, grandparent and great grand parent)
+
+            // Parent
+                // To target parent 
+                    //$('#child-C').parent().css('background','red');
+            // ---------------------------------------------------------------------------------
+
+            // Parents
+                // To target all parents with body  
+                    //$('#inner').parents('#main-outer').css('background','red');
+            // ---------------------------------------------------------------------------------
+
+            // ParentsUntil
+                // to target between
+                    //$('#inner').parentsUntil('#main-outer').css('background','red');
+            // ---------------------------------------------------------------------------------
+
+            // OffsetParent
+                // use to taget first person where position property use in css 
+                    //$('#inner').offsetParent().css('background','red');
+            // ---------------------------------------------------------------------------------
+
+            // Closest
+                // To target closest parent of given name Liv div, ul, li and other
+                    // $('#child-C').closest('ul').css('background','red');
+            // ---------------------------------------------------------------------------------
+                   
+// ---------------------------------------------------------------------------------------------------------------
+
+// Descendant Methods
+    // To target childern, grand child or great grand child 
+        // Childern
+            // To target all childern or specific childern       
+                // $('#inner').children('.test').css('background','red');
+        // ---------------------------------------------------------------------------------
+
+        // Find 
+            // to find and do changes in childern, grand child or great grand child 
+                //$('#main-outer').find('.test').css('background','red');
+        // ---------------------------------------------------------------------------------
+        
+// ---------------------------------------------------------------------------------------------------------------
+
+// Sibling Methods
+$('#child-C').siblings().css('background','red');
+
+			//$('#child-C').siblings('.test').css('background','red');
+
+			//$('#child-C').next().css('background','red');
+
+			//$('#child-C').prev().css('background','red');
+
+			//$('#child-C').prevAll().css('background','red');
+
+			//$('#child-C').nextAll().css('background','red');
+
+			//$('#child-C').nextUntil('.test').css('background','red');
+
+			//$('#child-C').prevUntil('.test').css('background','red');
+
+// ---------------------------------------------------------------------------------------------------------------
+
+// Filtering Method           
+$('#second p').first().css('background','gold');
+
+			//$('ul li').last().css('background','gold');
+
+			//$('ul li').eq(2).css('background','gold');
+
+			/* WithFilter*/
+			//$('p').filter('.test').css('background','gold');
+
+			/* WithOutFilter*/
+			//$('p.test').css('background','gold');
+
+			//$('p').not('.test').css('background','gold');
+
+			//$('ul li').slice(2).css('background','gold');
+
 // Stop Method
     // $('#stopBtn').click(function(){
         // To stop single animation     
@@ -589,10 +674,119 @@ $(document).ready(function () {
 
         // to stop all animation 
             // $('#box').stop(true);
-            
+
         // To skip animation 
             // $('#box').stop(true,true);
     // });
+// ---------------------------------------------------------------------------------------------------------------
+
+// has & is Method
+        $('p').has('b,span').css('background','gold');
+
+			//$('p').has('.test').css('background','gold');
+
+			/*if($('p').parent().is('div')){
+				console.log($('p').parent().is('div'));
+			}*/
+
+			/*$('p').click(function(){
+				if($(this).parent().is('div')){
+				$(this).css('background','gold');	
+				}
+			});*/
+
+// ---------------------------------------------------------------------------------------------------------------
+// each Method
+
+            $('li').each(function(){
+				console.log($(this).text());
+				//$(this).text("Hello");
+			});
+// ---------------------------------------------------------------------------------------------------------------
+
+// pageX & pageY Method
+
+        $(document).mousemove(function(event){
+            //$('#result').text(event.pageX)
+            
+            $('#result').text("X: " + event.pageX + " Y: " + event.pageY);
+            
+            var x = event.pageX;
+            var y = event.pageY;
+
+            $('#box').offset({top:y,left:x});
+        });
+// ---------------------------------------------------------------------------------------------------------------
+// Event. Property:
+    // Event.type Property
+
+            $('#box').on("click dbclick mouseover mouseout",function(event){
+                $('h2').html("Event: "+ event.type)
+            });
+    // ---------------------------------------------------------------------------------
+
+    // Event.which Property
+
+            $('#box').on("mouseover mouseout mousedown",function(event){
+                $('h2').html(event.type + ": " + event.which);
+            });
+
+            $('#inputbox').on("keydown",function(){
+                $('h2').html(event.type + ": " + event.which);
+            });
+    // ---------------------------------------------------------------------------------
+
+    // Event.target Property
+
+            $('#box').on("click",function(){
+                $('h3').html("Target Element: " + event.target.nodeName);
+            });
+    // ---------------------------------------------------------------------------------
+
+    // Event.target innerHTML Property
+
+            $('#box').on("click",function(){
+                $('h3').html("Target Element: " + event.target.innerHTML);
+            });
+    // ---------------------------------------------------------------------------------
+
+    // Event.preventDefault() Method
+
+            $('#result').click(function(event){
+                event.preventDefault();
+
+                var a = event.isDefaultPrevented();
+                $('h2').html(a);
+            });
+    // ---------------------------------------------------------------------------------
+
+    // Event.stopPropagation() Property
+
+            $('#box').click (function(){
+                alert("The div element was Clicked");
+            });
+
+            $('h2').click (function(){
+                alert("The h2 element was Clicked");
+            });
+
+            $('p').click (function(event){
+                event.stopPropagation();
+                alert("The p element was Clicked" + event.isPropagationStopped());
+            });
+
+            $('button').click (function(){
+                alert("The button element was Clicked");
+            });
+    // ---------------------------------------------------------------------------------
+
+    // Event.data
+
+            $('p').each(function (i){
+                $(this).on("click",{value:i},function(event){
+                    alert(event.data.value);
+                });
+            });
 // ---------------------------------------------------------------------------------------------------------------
 
 // some other stuff
