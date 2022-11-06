@@ -429,6 +429,30 @@ $(document).ready(function () {
  
 // ---------------------------------------------------------------------------------------------------------------
 
+// jQuery Offset & Position Method
+    // Position (Relative to its parent element)
+        // To know the location or position of text or any other thing how much top and left it has (if padding avaliable it always show the position text with padding)
+			// $('#positionBtn').click(function(){
+				//console.log($("#box h2").position());
+
+				// var x = $("#box h2").position();
+				// console.log("TOP : " + x.top + " left : " + x.left);
+			// });
+    // ---------------------------------------------------------------------------------
+
+    // Offset (relative to the Document)
+         // To know the location or position of text or any other thing how much top and left it has padding dont work here
+			// $('#offsetBtn').click(function(){
+				//console.log($("#box h2").offset());
+
+				//var x = $("#box h2").offset();
+				//console.log("TOP : " + x.top + " left : " + x.left);
+
+				// $("#box h2").offset({top:100,left:100});
+			// });
+    // ---------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------------
+
 // Class Method: 
 	// jQuery AddClass Method
         // add class when when click on button  
@@ -454,7 +478,66 @@ $(document).ready(function () {
             // });
     // ---------------------------------------------------------------------------------
 
+    // hasClass Method
+        // to know class in avaliable or not 
+			// $('#hasClassBtn').click(function(){
+				//console.log($('#box h2').hasClass('test'));
+
+				// var x = $('#box h2').hasClass('test');
+				// if(x == true){
+					// console.log('Yes');
+				// }else{
+					// console.log('No');
+				// }
+			// });
 // ---------------------------------------------------------------------------------------------------------------
+
+// scrollTop & scrollLeft Method
+    // ScrollTop (Vertical scroll)
+        // Help us to scroll and also help to get value how much to scroll
+            // To know how much scroll in console
+                //console.log($(window).scrollTop());
+        // -----------------------------------------------------------------
+
+        // To get scroll value in specific box on page 
+            // $(window).scroll(function(){
+                // $('#box').html("");
+                // $('#box').append("Top : " + $(window).scrollTop());
+            // });
+        // -----------------------------------------------------------------
+
+        // Scroll using button 
+            // $('#scrolltopBtn').click(function(){
+                // $(window).scrollTop(200);
+            // });
+        // -----------------------------------------------------------------
+
+    // ---------------------------------------------------------------------------------
+
+    // ScrollLeft (Horizontal scroll)
+        // Help us to scroll and also help to get value how much to scroll 
+            // To know how much scroll in console
+                //console.log($(window).scrollLeft());
+        // -----------------------------------------------------------------
+
+        // To get scroll value in specific box on page 
+            // $(window).scroll(function(){
+                // $('#box').html("");
+                // $('#box').append("<br>Left : " + $(window).scrollLeft());
+            // });
+        // -----------------------------------------------------------------
+
+        // Scroll using button 
+            // $('#scrollleftBtn').click(function(){
+                // $(window).scrollLeft(100);
+            // });
+        // -----------------------------------------------------------------
+
+    // ---------------------------------------------------------------------------------
+
+// ---------------------------------------------------------------------------------------------------------------
+
+
 
 // Slide methods - speed and callback parameters are optional
 
