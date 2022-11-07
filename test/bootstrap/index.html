@@ -323,27 +323,249 @@ Alignment:
     Vertical alignment (Align item):
 
     <div class="container">
-        <div class="row">
+        <div class="row align-items-start">
+            <div class="col">One of three columns</div>
+            <div class="col">One of three columns</div>
+            <div class="col">One of three columns</div>
+        </div>
 
-            leave space when end
-                <div class="col align-self-start">
-                    One of three columns
-                </div>
-                
-            leave space from start and end
-                <div class="col align-self-center">
-                    One of three columns
-                </div>
+        <div class="row align-items-center">
+            <div class="col">One of three columns</div>
+            <div class="col">One of three columns</div>
+            <div class="col">One of three columns</div>
+        </div>
 
-            leave space when start
-                <div class="col align-self-end">
-                    One of three columns
-                </div>
+        <div class="row align-items-end">
+            <div class="col">One of three columns</div>
+            <div class="col">One of three columns</div>
+            <div class="col">One of three columns</div>
         </div>
     </div>
 
+    Vertical alignment (Align Content):
+
+        <div class="container">
+
+            Vertical Alignment satrt (leave space when end)
+                <div class="row align-content-lg-start">
+                    <div class="col-2">Colume Number</div>
+                    <div class="col-4">Colume Number</div>
+                    <div class="col-4">Colume Number</div>
+                    <div class="col-2">Colume Number</div>
+                </div>
+
+            Vertical Alignment center (leave space from start and end)
+                <div class="row align-content-center">
+                    <div class="col-4">Colume Number</div>
+                    <div class="col-4">Colume Number</div>
+                </div>
+
+            Vertical Alignment end (leave space when start)
+                <div class="row align-content-end">
+                    <div class="col-4">Colume Number</div>
+                    <div class="col-4">Colume Number</div>
+                </div>
+
+            Vertical Alignment around (leave space in start, end and center)
+                <div class="row align-content-around">
+                    <div class="col-4">Colume Number</div>
+                    <div class="col-4">Colume Number</div>
+                </div>
+
+            Vertical Alignment between (leave space in center)
+                <div class="row align-content-between">
+                    <div class="col-4">Colume Number</div>
+                    <div class="col-4">Colume Number</div>
+                </div>
+
+            Vertical Alignment evenly (leave space evenly)
+                <div class="row align-content-evenly">
+                    <div class="col-4">Colume Number</div>
+                    <div class="col-4">Colume Number</div>
+                </div>
+        </div>
+
+    Vertical alignment (Align self):  
+        <div class="container">
+            <div class="row">
+
+                leave space when end
+                    <div class="col align-self-start">
+                        One of three columns
+                    </div>
+
+                leave space from start and end
+                    <div class="col align-self-center">
+                        One of three columns
+                    </div>
+
+                leave space when start
+                    <div class="col align-self-end">
+                        One of three columns
+                    </div>
+            </div>
+        </div>
+
+    ------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Flex Classes:
+    Flex box
+        <div class="container">
+            <div class="d-flex bg-primary">I'm a flexbox container!</div>
+        </div>
     ------------------------------------------------------------------------------------------
 
+    Flex box inline
+        <div class="container">
+            <div class="d-inline-flex bg-primary">I'm an inline flexbox container!</div>
+        </div>
+    ------------------------------------------------------------------------------------------
+
+    flex-row
+        <div class="d-flex flex-row  mb-3">
+            <div class="p-2 ">Flex item 1</div>
+            <div class="p-2 ">Flex item 2</div>
+            <div class="p-2 ">Flex item 3</div>
+        </div>
+    ------------------------------------------------------------------------------------------
+
+    flex-row-reverse
+        <div class="d-flex flex-row-reverse ">
+            <div class="p-2 ">Flex item 1</div>
+            <div class="p-2 ">Flex item 2</div>
+            <div class="p-2 ">Flex item 3</div>
+        </div>
+    ------------------------------------------------------------------------------------------
+
+    flex-colum
+        <div class="d-flex flex-column  mb-3">
+            <div class="p-2 ">Flex item 1</div>
+            <div class="p-2 ">Flex item 2</div>
+            <div class="p-2 ">Flex item 3</div>
+        </div>
+    ------------------------------------------------------------------------------------------
+
+    flex-colum-reverse
+        <div class="d-flex flex-column-reverse ">
+            <div class="p-2 ">Flex item 1</div>
+            <div class="p-2 ">Flex item 2</div>
+            <div class="p-2 ">Flex item 3</div>
+        </div>
+    ------------------------------------------------------------------------------------------
+
+    flex with justify content
+        <div class="d-flex justify-content-start">...</div>
+        <div class="d-flex justify-content-end">...</div>
+        <div class="d-flex justify-content-center">...</div>
+        <div class="d-flex justify-content-between">...</div>
+        <div class="d-flex justify-content-around">...</div>
+        <div class="d-flex justify-content-evenly">...</div>
+    ------------------------------------------------------------------------------------------
+
+    flex with align item
+        <div class="d-flex align-items-start">...</div>
+        <div class="d-flex align-items-end">...</div>
+        <div class="d-flex align-items-center">...</div>
+        <div class="d-flex align-items-baseline">...</div>
+        <div class="d-flex align-items-stretch">...</div>
+    ------------------------------------------------------------------------------------------
+    Flex Fill
+        <div class="d-flex ">
+            <div class="p-2 flex-fill">Flex item with a lot of content</div>
+            <div class="p-2 flex-fill">Flex item</div>
+            <div class="p-2 flex-fill">Flex item</div>
+        </div>
+    ------------------------------------------------------------------------------------------
+
+    Flex Grow
+        <div class="d-flex ">
+            <div class="p-2 flex-grow-1">Flex item</div>
+            <div class="p-2 ">Flex item</div>
+            <div class="p-2 ">Third flex item</div>
+        </div>
+    ------------------------------------------------------------------------------------------
+
+    Flex Shrink
+        <div class="d-flex bd-highlight">
+            <div class="p-2 w-100 bd-highlight">Flex item</div>
+            <div class="p-2 flex-shrink-1 bd-highlight">Flex item</div>
+        </div>
+    ------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Dispaly Properties:
+        none, inline, inline-block, block, grid, table, table-cell, table-row, flex, inline-flex
+
+    Display inline:
+        <div class="d-inline p-2 bg-primary text-white">d-inline</div>
+        <div class="d-inline p-2 bg-dark text-white">d-inline</div>
+    ------------------------------------------------------------------------------------------
+    
+    Display block:
+        <span class="d-block p-2 bg-primary text-white">d-block</span>
+        <span class="d-block p-2 bg-dark text-white">d-block</span>
+    ------------------------------------------------------------------------------------------
+
+    Display none:
+        <div class="d-lg-none">hide on lg and wider screens</div>
+        <div class="d-none d-lg-block">hide on screens smaller than lg</div>
+    ------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Float Classes:
+    Float Left
+        <div class="float-left">Float left on all viewport sizes</div><br>
+    ------------------------------------------------------------------------------------------
+
+    Float Right
+        <div class="float-right">Float right on all viewport sizes</div><br>
+    ------------------------------------------------------------------------------------------
+
+    Float Start
+        <div class="float-start">Float start on all viewport sizes</div><br>
+    ------------------------------------------------------------------------------------------
+
+    Float End
+        <div class="float-end">Float end on all viewport sizes</div><br>
+    ------------------------------------------------------------------------------------------
+
+    Float None
+        <div class="float-none">Don't float on all viewport sizes</div>
+    ------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Clearfix (when we use float right and left than glitch happen to fix it we use clearfix)
+    <div class="bg-info clearfix">
+        <button type="button" class="btn btn-secondary float-left">Example Button floated left</button>
+        <button type="button" class="btn btn-secondary float-right">Example Button floated right</button>
+    </div>
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Position Classes:
+    Sticky
+        <div class="blue w-25 sticky-top">
+            <h2>Col</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+    Fixed top
+        <div class="blue w-25 fixed-top">
+            <h2>Col</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+    Fixed Bottom
+        <div class="blue w-25 fixed-bottom">
+            <h2>Col</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+    Fixed top and bottom both
+            <div class="blue w-25 fixed-top fixed-bottom">
+                <h2>Col</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
 
 
 Alert:
