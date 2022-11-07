@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Document</title>
 </head>
+
 <body>
-<!-- 
+    <!-- 
 Container Class:
     Defult-Container (Auto Responsive)
         Our default .container class is a responsive, fixed-width container, meaning its max-width changes at each breakpoint.
@@ -165,6 +168,120 @@ offset class:
                 <div class="col-md-6 offset-md-3">.col-md-6 .offset-md-3</div>
             </div>
         </div>  
+----------------------------------------------------------------------------------------------------------------------------------- 
+
+Ordering Class:
+    when we want to reorder classes
+
+        last Position: When we want to order classin last position
+            <div class="container">
+                <div class="row">
+                    <div class="col order-last">
+                        First in DOM, ordered last
+                    </div>
+                    <div class="col">
+                        Second in DOM, unordered
+                    </div                        
+        First Position: When we want to order class in first position
+            <div class="col order-first">
+                Third in DOM, ordered first
+                </div>
+            </div>
+            </div>
+
+    we can also use it with mediaquery (sm: 540px, md: 720px, lg: 960px, xl: 1140px, xxl: 1320px); 
+    
+        order-xxl-first/last
+        order-xl-first/last
+        order-lg-first/last
+        order-md-first/last
+        order-sm-first/last
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Nesting
+    it is use when we want to make 2 or more colume in main colume
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Header</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Sub Header</h3>
+                            <p>  A paragraph of placeholder text. We're using it here to show the use of the clearfix class. We're adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image. A paragraph of placeholder text. We're using it here to show the use of the clearfix class. We're adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Sub Header</h3>
+                            <p>  A paragraph of placeholder text. We're using it here to show the use of the clearfix class. We're adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image. A paragraph of placeholder text. We're using it here to show the use of the clearfix class. We're adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+-----------------------------------------------------------------------------------------------------------------------------------
+Margin Utilities:
+    Auto class
+        m-auto (to exect center)
+        ml-auto (to give margin left)
+        mr-auto (to give margin right)
+
+        x - for classes that set both left and right
+        y - for classes that set both top and bottom
+
+    we can also use it with mediaquery (sm: 540px, md: 720px, lg: 960px, xl: 1140px, xxl: 1320px) all of them give us margin from four sides; 
+        m-xxl-auto
+        m-xl-auto
+        m-lg-auto
+        m-md-auto
+        m-sm-auto
+
+    Margin From different side
+        m-0 (margin) 0=0px
+        mr-1 (margin right 1= 0.25rem)
+        ml-2 (margin left 2= 0.50rem)
+        mt-3 (margin top 3= 1rem)
+        mb-4 (margin bottom 4= 1.5rem)
+        m-5 (5= 3rem)
+
+    we can also use it with mediaquery (sm: 540px, md: 720px, lg: 960px, xl: 1140px, xxl: 1320px)
+        mr-xxl-0    mr-xl-0     mr-lg-0     mr-md-0     mr-sm-0
+        ml-xxl-0    ml-xl-0     ml-lg-0     ml-md-0     ml-sm-0
+        mt-xxl-0    mt-xl-0     mt-lg-0     mt-md-0     mt-sm-0
+        mb-xxl-0    mb-xl-0     mb-lg-0     mb-md-0     mb-sm-0
+
+    we also do it with negative
+         mr-xxl-n5    mr-xl-n5     mr-lg-n5     mr-md-n5     mr-sm-n5
+         ml-xxl-n5    ml-xl-n5     ml-lg-n5     ml-md-n5     ml-sm-n5
+         mt-xxl-n5    mt-xl-n5     mt-lg-n5     mt-md-n5     mt-sm-n5
+         mb-xxl-n5    mb-xl-n5     mb-lg-n5     mb-md-n5     mb-sm-n5
+-----------------------------------------------------------------------------------------------------------------------------------
+Padding Utilities
+        padding From different side
+        p-0 (padding 0= 0px)
+        pr-1 (padding right 1= 0.25rem)
+        pl-2 (padding left 2= 0.50rem)
+        pt-3 (padding top 3= 1rem)
+        pb-4 (padding bottom 4= 1.5rem)
+        p-5 (5= 3rem)
+
+    we can also use it with mediaquery (sm: 540px, md: 720px, lg: 960px, xl: 1140px, xxl: 1320px)
+        pr-xxl-0    pr-xl-0     pr-lg-0     pr-md-0     pr-sm-0
+        pl-xxl-0    pl-xl-0     pl-lg-0     pl-md-0     pl-sm-0
+        pt-xxl-0    pt-xl-0     pt-lg-0     pt-md-0     pt-sm-0
+        pb-xxl-0    pb-xl-0     pb-lg-0     pb-md-0     pb-sm-0
+
+    we also do it with negative
+         pr-xxl-n5    pr-xl-n5     pr-lg-n5     pr-md-n5     pr-sm-n5
+         pl-xxl-n5    pl-xl-n5     pl-lg-n5     pl-md-n5     pl-sm-n5
+         pt-xxl-n5    pt-xl-n5     pt-lg-n5     pt-md-n5     pt-sm-n5
+         pb-xxl-n5    pb-xl-n5     pb-lg-n5     pb-md-n5     pb-sm-n5
+-----------------------------------------------------------------------------------------------------------------------------------
+Alignment:
+    Horizontal Alignment (Justify Content):
+
+
+    Vertical alignment (Align item): 
+
+
 
 Alert:
         Normal Alert with different Color using bootstap:
