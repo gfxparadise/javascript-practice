@@ -263,6 +263,10 @@ Padding Utilities
         pb-4 (padding bottom 4= 1.5rem)
         p-5 (5= 3rem)
 
+        x - for classes that set both left and right
+        y - for classes that set both top and bottom
+
+
     we can also use it with mediaquery (sm: 540px, md: 720px, lg: 960px, xl: 1140px, xxl: 1320px)
         pr-xxl-0    pr-xl-0     pr-lg-0     pr-md-0     pr-sm-0
         pl-xxl-0    pl-xl-0     pl-lg-0     pl-md-0     pl-sm-0
@@ -566,7 +570,110 @@ Position Classes:
                 <h2>Col</h2>
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
+-----------------------------------------------------------------------------------------------------------------------------------
 
+Over-flow Classes:
+    Over-flow Auto:
+        .overflow-auto on an element with set width and height dimensions. By design, this content will vertically scroll.
+
+            <div class="overflow-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit delectus iure distinctio aut voluptatem, eos illo assumenda! Saepe numquam nesciunt ipsam obcaecati reprehenderit error a corporis necessitatibus. Rem blanditiis ex iste esse voluptate nesciunt, consequuntur tempore non unde? Animi incidunt quam cupiditate. Iure ullam libero vel voluptates porro, maiores molestiae provident molestias magni repudiandae ipsum veniam deserunt quasi rerum voluptas laborum, aliquid itaque dicta! Eaque error suscipit dolorem ipsum cum recusandae distinctio in nisi perferendis tempore, sit consectetur assumenda corporis delectus inventore aliquam placeat. Doloribus, distinctio? Maxime, nesciunt vitae! Eius itaque totam alias magni, impedit laudantium labore officia quod maxime odio ipsum eveniet vitae expedita placeat corrupti, eos sint cum, ducimus est illo aliquam vero cupiditate. Aliquid nisi suscipit dolor ratione harum facere cum ab quia! Qui perspiciatis, expedita numquam est, iusto voluptatem, natus deserunt consequuntur asperiores dignissimos iste sunt quidem voluptate beatae voluptatibus omnis esse iure reprehenderit id at quae. Sed non temporibus dolorem mollitia facilis ea corporis, consectetur maxime </div>
+
+    Over-flow Hidden
+        .overflow-hidden on an element with set width and height dimensions and hide that content
+
+            <div class="overflow-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dignissimos ut voluptas doloremque itaque reiciendis voluptatum esse minima architecto error. Eius enim cum ipsam consectetur expedita corrupti, ratione laudantium hic iusto dicta recusandae velit! Ratione obcaecati, accusamus animi commodi voluptates dolorum eligendi porro veritatis repudiandae recusandae deserunt voluptatem aliquam impedit.</div>
+
+    Over-flow Vissible
+        It is default view
+
+            <div class="overflow-visible">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe veritatis vitae quas incidunt. Quasi nihil possimus ut ex beatae repellendus molestiae non, fugiat eveniet obcaecati saepe nesciunt, necessitatibus quis magnam! Deserunt, deleniti ipsa ab tempore tempora quo pariatur nisi amet rem eum nemo ipsum quisquam nobis saepe modi nam adipisci!</div>
+
+    Over-flow scroll
+
+            <div class="overflow-scroll">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores impedit nihil, consequuntur natus iste molestias sapiente ullam. Dolores deserunt, explicabo expedita fugit hic ex fugiat ipsa officia nulla quis sed quod eos, non cupiditate unde, delectus beatae saepe nihil! Reprehenderit optio error ipsam sit et delectus, ullam exercitationem ea fugit.</div>
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Text Classes
+    <p class="text-start">Start aligned text on all viewport sizes.</p>
+    <p class="text-center">Center aligned text on all viewport sizes.</p>
+    <p class="text-end">End aligned text on all viewport sizes.</p>
+    <p class="text-justify">Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Cras mattis iudicium purus sit amet fermentum.</p>
+
+    <p class="text-lowercase">Lowercased text.</p>
+    <p class="text-uppercase">Uppercased text.</p>
+    <p class="text-capitalize">CapiTaliZed text.</p>
+
+    <p class="text-decoration-underline">This text has a line underneath it.</p>
+    <p class="text-decoration-line-through">This text has a line going through it.</p>
+    <a href="#" class="text-decoration-none">This link has its text decoration removed</a>
+    <p class="text-muted">Muted text with a <a href="#" class="text-reset">reset link</a>.</p>
+
+    <div class="badge bg-primary text-wrap" style="width: 6rem;">This text should wrap.</div>
+    <div class="text-nowrap bd-highlight" style="width: 8rem;">This text should overflow the parent.</div>
+
+    <p class="text-sm-start">Start aligned text on viewports sized SM (small) or wider.</p>
+    <p class="text-md-start">Start aligned text on viewports sized MD (medium) or wider.</p>
+    <p class="text-lg-start">Start aligned text on viewports sized LG (large) or wider.</p>
+    <p class="text-xl-start">Start aligned text on viewports sized XL (extra-large) or wider.</p>
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Font class:
+    Font size:
+        <p class="fs-1">.fs-1 text</p>
+        <p class="fs-2">.fs-2 text</p>
+        <p class="fs-3">.fs-3 text</p>
+        <p class="fs-4">.fs-4 text</p>
+        <p class="fs-5">.fs-5 text</p>
+        <p class="fs-6">.fs-6 text</p>
+
+    Font weight and italics:
+        <p class="fw-bold">Bold text.</p>
+        <p class="fw-bolder">Bolder weight text (relative to the parent element).</p>
+        <p class="fw-normal">Normal weight text.</p>
+        <p class="fw-light">Light weight text.</p>
+        <p class="fw-lighter">Lighter weight text (relative to the parent element).</p>
+        <p class="fst-italic">Italic text.</p>
+        <p class="fst-normal">Text with normal font style</p>
+        <p class="lead">Text size increase and become thin font only paragraph</p>
+
+Button Class:
+Button with color
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+    <button type="button" class="btn btn-link">Link</button>
+
+Button tags
+<a class="btn btn-primary" href="#" role="button">Link</a>
+<button class="btn btn-primary" type="submit">Button</button>
+<input class="btn btn-primary" type="button" value="Input">
+<input class="btn btn-primary" type="submit" value="Submit">
+<input class="btn btn-primary" type="reset" value="Reset">
+
+Outlne button
+<button type="button" class="btn btn-outline-primary">Primary</button>
+<button type="button" class="btn btn-outline-secondary">Secondary</button>
+<button type="button" class="btn btn-outline-success">Success</button>
+<button type="button" class="btn btn-outline-danger">Danger</button>
+<button type="button" class="btn btn-outline-warning">Warning</button>
+<button type="button" class="btn btn-outline-info">Info</button>
+<button type="button" class="btn btn-outline-light">Light</button>
+<button type="button" class="btn btn-outline-dark">Dark</button>
+
+button size
+<button type="button" class="btn btn-primary btn-lg">Large button</button>
+<button type="button" class="btn btn-primary btn-sm">Small button</button>
+
+Disable button
+<button type="button" class="btn btn-lg btn-primary" disabled>Primary button</button>
+<a href="#" class="btn btn-primary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
 
 Alert:
         Normal Alert with different Color using bootstap:
