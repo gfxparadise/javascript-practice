@@ -118,7 +118,6 @@ Column Class:
                 ------------------------------------------------------------------------------------------
 
 ----------------------------------------------------------------------------------------------------------------------------------- 
-
 Colums Grid system:
             Alway avaliaable 12 column in grid For example 
                     <div class="container">
@@ -217,6 +216,7 @@ Nesting
                 </div>
             </div>
         </div>
+
 -----------------------------------------------------------------------------------------------------------------------------------
 Margin Utilities:
     Auto class
@@ -253,7 +253,9 @@ Margin Utilities:
          ml-xxl-n5    ml-xl-n5     ml-lg-n5     ml-md-n5     ml-sm-n5
          mt-xxl-n5    mt-xl-n5     mt-lg-n5     mt-md-n5     mt-sm-n5
          mb-xxl-n5    mb-xl-n5     mb-lg-n5     mb-md-n5     mb-sm-n5
+
 -----------------------------------------------------------------------------------------------------------------------------------
+
 Padding Utilities
         padding From different side
         p-0 (padding 0= 0px)
@@ -279,6 +281,7 @@ Padding Utilities
          pt-xxl-n5    pt-xl-n5     pt-lg-n5     pt-md-n5     pt-sm-n5
          pb-xxl-n5    pb-xl-n5     pb-lg-n5     pb-md-n5     pb-sm-n5
 -----------------------------------------------------------------------------------------------------------------------------------
+
 Alignment:
 
     Horizontal Alignment (Justify Content):
@@ -426,7 +429,7 @@ Flex Classes:
         </div>
     ------------------------------------------------------------------------------------------
 
-    flex-row
+    Flex-row
         <div class="d-flex flex-row  mb-3">
             <div class="p-2 ">Flex item 1</div>
             <div class="p-2 ">Flex item 2</div>
@@ -694,6 +697,696 @@ Button Class:
         Disable button using a tag
             <a href="#" class="btn btn-primary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
     ------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Button Group:
+    Normal
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-primary">Left</button>
+            <button type="button" class="btn btn-primary">Middle</button>
+            <button type="button" class="btn btn-primary">Right</button>
+        </div>
+    ------------------------------------------------------------------------------------------
+
+    Button multicolor
+        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+            <button type="button" class="btn btn-danger">Left</button>
+            <button type="button" class="btn btn-warning">Middle</button>
+            <button type="button" class="btn btn-success">Right</button>
+        </div>
+    ------------------------------------------------------------------------------------------
+
+    Button Outline
+        <div class="btn-group" role="group" aria-label="Basic outlined example">
+            <button type="button" class="btn btn-outline-primary">Left</button>
+            <button type="button" class="btn btn-outline-primary">Middle</button>
+            <button type="button" class="btn btn-outline-primary">Right</button>
+        </div> 
+    ------------------------------------------------------------------------------------------
+
+    Button checked:
+        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+            <label class="btn btn-outline-primary" for="btnradio1">Radio 1</label>
+
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btnradio2">Radio 2</label>
+
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btnradio3">Radio 3</label>
+        </div>
+    ------------------------------------------------------------------------------------------
+
+    Tool bar Horizontal
+        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group me-2" role="group" aria-label="First group">
+              <button type="button" class="btn btn-primary">1</button>
+              <button type="button" class="btn btn-primary">2</button>
+              <button type="button" class="btn btn-primary">3</button>
+              <button type="button" class="btn btn-primary">4</button>
+            </div>
+            <div class="btn-group me-2" role="group" aria-label="Second group">
+              <button type="button" class="btn btn-secondary">5</button>
+              <button type="button" class="btn btn-secondary">6</button>
+              <button type="button" class="btn btn-secondary">7</button>
+            </div>
+            <div class="btn-group" role="group" aria-label="Third group">
+              <button type="button" class="btn btn-info">8</button>
+            </div>
+        </div>
+    ------------------------------------------------------------------------------------------
+
+    Button vertical group
+        <div class="btn-group-vertical">
+              <button type="button" class="btn btn-primary">1</button>
+              <button type="button" class="btn btn-primary">2</button>
+              <button type="button" class="btn btn-primary">3</button>
+              <button type="button" class="btn btn-primary">4</button>
+        </div>
+    ------------------------------------------------------------------------------------------
+
+    Nesting Buttons
+        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+            <button type="button" class="btn btn-primary">1</button>
+            <button type="button" class="btn btn-primary">2</button>
+
+            <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                    <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                    <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                </ul>
+            </div>
+        </div>
+    ------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
+
+List Group:
+    Basic (border are avaliable)
+        <ul class="list-group">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">A fourth item</li>
+            <li class="list-group-item">And a fifth one</li>
+        </ul>
+    ------------------------------------------------------------------------------------------
+
+    Active list (part highlight)
+        <ul class="list-group">
+            <li class="list-group-item active" aria-current="true">An active item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">A fourth item</li>
+            <li class="list-group-item">And a fifth one</li>
+        </ul>
+    ------------------------------------------------------------------------------------------
+
+    Disable list
+        <ul class="list-group">
+            <li class="list-group-item disabled" aria-disabled="true">A disabled item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">A fourth item</li>
+            <li class="list-group-item">And a fifth one</li>
+        </ul>
+    ------------------------------------------------------------------------------------------
+
+    Flush (list without border)
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">A fourth item</li>
+            <li class="list-group-item">And a fifth one</li>
+        </ul>
+    ------------------------------------------------------------------------------------------
+
+    List with badges:
+        <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+            A list item
+            <span class="badge bg-primary rounded-pill">14</span></li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+            A second list item
+            <span class="badge bg-primary rounded-pill">2</span></li>
+        
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+            A third list item
+            <span class="badge bg-primary rounded-pill">1</span></li>
+        </ul>
+    ------------------------------------------------------------------------------------------
+
+    button list
+        list with <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action active" aria-current="true">The current link item</a>
+            <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+            <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+            <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+            <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">A disabled link item</a>
+        </div>
+    ------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Badges class
+    use to show how many notification come or highlighting any thing
+        Badge with heading:
+            <h1>Example heading <span class="badge bg-secondary">New</span></h1>
+            <h2>Example heading <span class="badge bg-secondary">New</span></h2>
+            <h3>Example heading <span class="badge bg-secondary">New</span></h3>
+            <h4>Example heading <span class="badge bg-secondary">New</span></h4>
+            <h5>Example heading <span class="badge bg-secondary">New</span></h5>
+            <h6>Example heading <span class="badge bg-secondary">New</span></h6>
+    ------------------------------------------------------------------------------------------
+
+        Badge on button:
+            <button type="button" class="btn btn-primary">
+                Notifications <span class="badge bg-secondary">4</span>
+            </button>
+    ------------------------------------------------------------------------------------------
+
+        Badge Positioned:
+        <button type="button" class="btn btn-primary position-relative">
+            Inbox
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"> 99+
+                <span class="visually-hidden">unread messages</span>
+            </span>
+        </button>
+    ------------------------------------------------------------------------------------------
+
+        Pill Badges (circle border)
+            <span class="badge rounded-pill bg-primary">Primary</span>
+            <span class="badge rounded-pill bg-secondary">Secondary</span>
+            <span class="badge rounded-pill bg-success">Success</span>
+            <span class="badge rounded-pill bg-danger">Danger</span>
+            <span class="badge rounded-pill bg-warning text-dark">Warning</span>
+            <span class="badge rounded-pill bg-info text-dark">Info</span>
+            <span class="badge rounded-pill bg-light text-dark">Light</span>
+            <span class="badge rounded-pill bg-dark">Dark</span>
+    ------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
+Table Class
+
+    Basic Table
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+            </tbody>
+        </table>
+    ----------------------------------------------------------------------------------------------
+    
+    Table Stripped Row 
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+            </tbody>
+        </table>    
+    ----------------------------------------------------------------------------------------------
+
+    Hoverable rows
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+            </tbody>
+        </table>  
+    ----------------------------------------------------------------------------------------------
+
+    Bordered tables
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+            </tbody>
+        </table>  
+    ----------------------------------------------------------------------------------------------
+
+    Tables without borders
+        <table class="table table-borderless">
+             <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+            </tbody>
+        </table>
+
+    ----------------------------------------------------------------------------------------------
+    Small Tabel:
+        <table class="table table-sm">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+            </tbody>
+        </table>
+    ----------------------------------------------------------------------------------------------
+
+    Tabel Head Different:        
+        <table class="table">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+            </tbody>
+        </table>
+    ----------------------------------------------------------------------------------------------
+   
+    Table with footer
+         <table class="table">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                 <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </tfoot>
+        </table>
+    ----------------------------------------------------------------------------------------------
+
+    Table Caption
+        <table class="table">
+            <caption>List of users</caption>
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                 <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </tfoot>
+        </table>
+    ----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Pagination: (Page navigation)
+    Normal Pagination
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </nav>
+    ----------------------------------------------------------------------------------------------
+
+    With icon Pagination
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+                </li>
+            </ul>
+        </nav>
+    ----------------------------------------------------------------------------------------------
+   
+    Size large Pagination
+        <nav aria-label="...">
+            <ul class="pagination pagination-lg">
+                <li class="page-item active" aria-current="page">
+                    <span class="page-link">1</span>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+            </ul>
+        </nav>
+    ----------------------------------------------------------------------------------------------
+   
+    Size small Pagination
+        <nav aria-label="...">
+            <ul class="pagination pagination-sm">
+                <li class="page-item active" aria-current="page">
+                    <span class="page-link">1</span>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+            </ul>
+        </nav>
+    ----------------------------------------------------------------------------------------------
+
+    Alignment Pagination
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+    ----------------------------------------------------------------------------------------------
+
+    Disable Pagination
+        <nav aria-label="...">
+            <ul class="pagination">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active" aria-current="page">
+                    <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+    ----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
+Breadcrumb
+    Normal
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Home</li>
+            </ol>
+        </nav>
+        
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Library</li>
+            </ol>
+        </nav>
+        
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Library</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Data</li>
+            </ol>
+        </nav>
+
+        OR
+
+        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+            aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Library</li>
+            </ol>
+        </nav>
+-----------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------
+Form all Class Combination:
+    <div class="container">
+        <h2 class="py-3 text-center">Form Classes</h2>
+        <div class="row py-3">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="text" value="abc@email.com" class="form-control-plaintext" readonly>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" class="form-control">
+                    <small class="form-text text-muted">
+                        Your password must be 8-20 Characters long.
+                    </small>
+                </div>
+                <div class="form-group">
+                    <label>Country</label>
+                    <select name="" id="" class="form-control">
+                        <option value="">Pakistan</option>
+                        <option value="">China</option>
+                        <option value="">Bangladesh</option>
+                        <option value="">Nepal</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea name="" class="form-control"></textarea>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>File Upload</label>
+                    <input type="file" class="form-control-file">
+                </div>
+                <div class="form-group">
+                    <label>Amount</label>
+                    <input type="range" class="form-control-range">
+                </div>
+                <div class="form-group">
+                    <label>Hobbies</label>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="musicCheck">
+                        <label for="musicCheck" class="form-check-label">Music</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="sportCheck">
+                        <label for="sportCheck" class="form-check-label">Sports</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="bookCheck" disabled>
+                        <label for="bookCheck" class="form-check-label">Books</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Gender</label>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="gender" id="maleradio">
+                        <label for="maleradio" class="form-check-label">Male</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="gender" id="femaleradio">
+                        <label for="femaleradio" class="form-check-label">Female</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 -----------------------------------------------------------------------------------------------------------------------------------
 
 Alert:
