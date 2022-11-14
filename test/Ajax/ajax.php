@@ -12,6 +12,16 @@ $(document).ready(functiom){
     })
 }
 
-// Way to insert data using ajax without refreashing data
+// Way to insert data using ajax without refreashing data:
+
+// Way to delete record:
+
+// Way to edit using ajax:
+
+// Live Search:
+
+// pagination:
+
+// Loadmore pagination 
 
 </Script>
