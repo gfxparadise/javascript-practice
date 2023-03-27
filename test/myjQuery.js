@@ -632,7 +632,7 @@ $(document).ready(function () {
 // ---------------------------------------------------------------------------------------------------------------
 
 // Sibling Methods
-$('#child-C').siblings().css('background','red');
+// $('#child-C').siblings().css('background','red');
 
 			//$('#child-C').siblings('.test').css('background','red');
 
@@ -651,7 +651,7 @@ $('#child-C').siblings().css('background','red');
 // ---------------------------------------------------------------------------------------------------------------
 
 // Filtering Method           
-$('#second p').first().css('background','gold');
+// $('#second p').first().css('background','gold');
 
 			//$('ul li').last().css('background','gold');
 
@@ -681,7 +681,7 @@ $('#second p').first().css('background','gold');
 // ---------------------------------------------------------------------------------------------------------------
 
 // has & is Method
-        $('p').has('b,span').css('background','gold');
+        // $('p').has('b,span').css('background','gold');
 
 			//$('p').has('.test').css('background','gold');
 
@@ -698,24 +698,24 @@ $('#second p').first().css('background','gold');
 // ---------------------------------------------------------------------------------------------------------------
 // each Method
 
-            $('li').each(function(){
-				console.log($(this).text());
-				//$(this).text("Hello");
-			});
+            // $('li').each(function(){
+				// console.log($(this).text());
+				// $(this).text("Hello");
+			// });
 // ---------------------------------------------------------------------------------------------------------------
 
 // pageX & pageY Method
 
-        $(document).mousemove(function(event){
+        // $(document).mousemove(function(event){
             //$('#result').text(event.pageX)
             
-            $('#result').text("X: " + event.pageX + " Y: " + event.pageY);
+            // $('#result').text("X: " + event.pageX + " Y: " + event.pageY);
             
-            var x = event.pageX;
-            var y = event.pageY;
+            // var x = event.pageX;
+            // var y = event.pageY;
 
-            $('#box').offset({top:y,left:x});
-        });
+            // $('#box').offset({top:y,left:x});
+        // });
 // ---------------------------------------------------------------------------------------------------------------
 // Event. Property:
     // Event.type Property
@@ -725,7 +725,7 @@ $('#second p').first().css('background','gold');
             });
     // ---------------------------------------------------------------------------------
 
-    // Event.which Property
+    // Event.which Property.
 
             $('#box').on("mouseover mouseout mousedown",function(event){
                 $('h2').html(event.type + ": " + event.which);
@@ -736,21 +736,21 @@ $('#second p').first().css('background','gold');
             });
     // ---------------------------------------------------------------------------------
 
-    // Event.target Property
+    // Event.target Property.
 
             $('#box').on("click",function(){
                 $('h3').html("Target Element: " + event.target.nodeName);
             });
     // ---------------------------------------------------------------------------------
 
-    // Event.target innerHTML Property
+    // Event.target innerHTML Property.
 
             $('#box').on("click",function(){
                 $('h3').html("Target Element: " + event.target.innerHTML);
             });
     // ---------------------------------------------------------------------------------
 
-    // Event.preventDefault() Method
+    // Event.preventDefault() Method.
 
             $('#result').click(function(event){
                 event.preventDefault();
@@ -760,24 +760,24 @@ $('#second p').first().css('background','gold');
             });
     // ---------------------------------------------------------------------------------
 
-    // Event.stopPropagation() Property
+    // Event.stopPropagation() Property.
 
-            $('#box').click (function(){
-                alert("The div element was Clicked");
-            });
+            // $('#box').click (function(){
+            //     alert("The div element was Clicked");
+            // });
 
-            $('h2').click (function(){
-                alert("The h2 element was Clicked");
-            });
+            // $('h2').click (function(){
+            //     alert("The h2 element was Clicked");
+            // });
 
-            $('p').click (function(event){
-                event.stopPropagation();
-                alert("The p element was Clicked" + event.isPropagationStopped());
-            });
+            // $('p').click (function(event){
+            //     event.stopPropagation();
+            //     alert("The p element was Clicked" + event.isPropagationStopped());
+            // });
 
-            $('button').click (function(){
-                alert("The button element was Clicked");
-            });
+            // $('button').click (function(){
+            //     alert("The button element was Clicked");
+            // });
     // ---------------------------------------------------------------------------------
 
     // Event.data
@@ -791,7 +791,7 @@ $('#second p').first().css('background','gold');
 
 // some other stuff
 
-    // to do change in form or text area value we use val function 
+    // to do change in form or text area value we use val function. 
         // $('#ta').val('blue');
         // $('#inp').val('setting it to blue');
     // ---------------------------------------------------------------------------------
